@@ -1,9 +1,10 @@
 import java.util.ArrayList;
 import java.util.List;
 
-interface StringChecked { boolean checkString(String s); }
+interface StringChecker { boolean checkString(String s); }
 
 class ListExamples {
+
   static List<String> filter(List<String> list, StringChecker sc) {
     List<String> result = new ArrayList<>();
     for(String s: list) {
@@ -38,3 +39,5 @@ class ListExamples {
     return result;
   }
 
+
+}
